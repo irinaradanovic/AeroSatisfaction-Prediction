@@ -1,14 +1,15 @@
 # AeroSatisfaction-Prediction
 
-1. Struktura projekta 
-data/ - Folder koji sadrži skupove podataka: 
-    train.csv - Skup podataka za obučavanje modela 
-    test.csv - Skup podataka za evaluaciju (testiranje) modela 
-eda.ipynb - Jupiyter sveska sa eksplorativnom analizom podataka (EDA)  
-aerosatisfaction.ipynb - Jupyter sveska sa pripremom podataka, treningom i evaluacijom  modela 
-requirements.txt - Spisak svih neophodnih Python biblioteka 
+1. Struktura projekta
+   
+    data/ - Folder koji sadrži skupove podataka: 
+        train.csv - Skup podataka za obučavanje modela 
+        test.csv - Skup podataka za evaluaciju (testiranje) modela 
+    eda.ipynb - Jupiyter sveska sa eksplorativnom analizom podataka (EDA)  
+    aerosatisfaction.ipynb - Jupyter sveska sa pripremom podataka, treningom i evaluacijom  modela 
+    requirements.txt - Spisak svih neophodnih Python biblioteka 
 
-2. Priprema okruženja  
+3. Priprema okruženja  
 Kako bi se obezbedilo izolovano okruženje, preporučuje se kreiranje virtuelnog okruženja. 
     1. U korenu projekta, otvorite terminal i unesite sledeću komandu: python -m venv venv 
     2. Aktivirajte virtuelno okruženje: 
@@ -16,7 +17,7 @@ Kako bi se obezbedilo izolovano okruženje, preporučuje se kreiranje virtuelnog
     Linux/macOS: source venv/bin/activate 
     3. Instalirajte potrebne biblioteke 
     Pokrenite komandu u terminalu: pip install -r requirements.txt 
-3. Pokretanje i pregled projekta 
+4. Pokretanje i pregled projekta 
 Projekat je podeljen u logičke celine koje se mogu pokretati i pregledati kroz razvojna 
 okruženja poput Jupyter Notebook, JupyterLab ili VS Code. 
 Opcija A: Pregled već pokrenutog koda 
