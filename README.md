@@ -1,32 +1,103 @@
-# AeroSatisfaction-Prediction
+# Predikcija zadovoljstva putnika avio-kompanije
 
-1. Struktura projekta
-   
-    data/ - Folder koji sadrži skupove podataka: 
-        train.csv - Skup podataka za obučavanje modela 
-        test.csv - Skup podataka za evaluaciju (testiranje) modela 
-    eda.ipynb - Jupiyter sveska sa eksplorativnom analizom podataka (EDA)  
-    aerosatisfaction.ipynb - Jupyter sveska sa pripremom podataka, treningom i evaluacijom  modela 
-    requirements.txt - Spisak svih neophodnih Python biblioteka 
+Ovaj projekat se bavi predikcijom zadovoljstva putnika avio-kompanije pomoću nekoliko modela mašinskog učenja i veštačkih neuronskih mreža:
 
-3. Priprema okruženja  
-Kako bi se obezbedilo izolovano okruženje, preporučuje se kreiranje virtuelnog okruženja. 
-    1. U korenu projekta, otvorite terminal i unesite sledeću komandu: python -m venv venv 
-    2. Aktivirajte virtuelno okruženje: 
-    Windows: venv\Scripts\activate 
-    Linux/macOS: source venv/bin/activate 
-    3. Instalirajte potrebne biblioteke 
-    Pokrenite komandu u terminalu: pip install -r requirements.txt 
-4. Pokretanje i pregled projekta 
-Projekat je podeljen u logičke celine koje se mogu pokretati i pregledati kroz razvojna 
-okruženja poput Jupyter Notebook, JupyterLab ili VS Code. 
-Opcija A: Pregled već pokrenutog koda 
-Pošto su sve ćelije unutar datoteka eda.ipynb i aerosatisfaction.ipynb izvršene pre čuvanja, 
-možete otvoriti ove datoteke u vašem razvojnom okruženju. 
-Opcija B: Ponovno izvršavanje projekta od početka 
-Ukoliko želite da ponovo pokrenete projekat ili izvršite izmene: Otvorite svesku po želji I 
-pokrenite opet sve ćelije klikom na "Run All" ili selektujte jednu ćeliju I kliknite na ikonicu 
-"Play" pored ćelije. 
-Napomena za VS Code: Nakon otvaranja sveske, u gornjem desnom uglu kliknite na dugme 
-"Select Kernel" i sa liste izaberite Python interpretator iz našeg kreiranog virtuelnog 
-okruženja (venv). 
+- Logistic Regression
+- Random Forest
+- MLP (Multi-Layer Perceptron)
+
+Celokupan proces je implementiran u okviru Jupyter Notebook (`.ipynb`) datoteka koje su unapred pokrenute, tako da su svi grafikoni, metrike i rezultati odmah vidljivi.
+
+---
+
+# 1. Struktura projekta
+
+```text
+data/
+│── train.csv                 # Skup podataka za obučavanje modela
+│── test.csv                  # Skup podataka za evaluaciju (testiranje)
+
+eda.ipynb                     # Jupyter sveska sa eksplorativnom analizom podataka (EDA)
+
+aerosatisfaction.ipynb        # Jupyter sveska sa pripremom podataka,
+                               # treningom i evaluacijom modela
+
+requirements.txt              # Spisak svih neophodnih Python biblioteka
+```
+
+---
+
+# 2. Priprema okruženja
+
+Kako bi se obezbedilo izolovano okruženje, preporučuje se kreiranje virtuelnog okruženja.
+
+## Korak 1: Kreiranje virtuelnog okruženja
+
+U korenu projekta otvorite terminal i unesite sledeću komandu:
+
+```bash
+python -m venv venv
+```
+
+---
+
+## Korak 2: Aktivacija virtuelnog okruženja
+
+### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+### Linux/macOS
+
+```bash
+source venv/bin/activate
+```
+
+---
+
+## Korak 3: Instalacija potrebnih biblioteka
+
+Pokrenite sledeću komandu u terminalu:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# 3. Pokretanje i pregled projekta
+
+Projekat je podeljen u logičke celine koje se mogu pokretati i pregledati kroz razvojna okruženja poput:
+
+- Jupyter Notebook
+- JupyterLab
+- VS Code
+
+---
+
+## Opcija A: Pregled već pokrenutog koda
+
+Pošto su sve ćelije unutar datoteka `eda.ipynb` i `aerosatisfaction.ipynb` izvršene pre čuvanja, dovoljno je otvoriti ove datoteke u željenom razvojnom okruženju.
+
+Svi grafikoni, metrike i rezultati biće odmah vidljivi.
+
+---
+
+## Opcija B: Ponovno izvršavanje projekta od početka
+
+Ukoliko želite da ponovo pokrenete projekat ili izvršite izmene:
+
+1. Otvorite željenu Jupyter svesku.
+2. Pokrenite sve ćelije klikom na **Run All**.
+3. Alternativno, možete selektovati pojedinačnu ćeliju i kliknuti na dugme **Play** pored ćelije.
+
+---
+
+## Napomena za VS Code
+
+Nakon otvaranja sveske:
+
+1. U gornjem desnom uglu kliknite na dugme **Select Kernel**.
+2. Sa liste izaberite Python interpretator iz kreiranog virtuelnog okruženja (`venv`).
